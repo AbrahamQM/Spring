@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Aquí vamos a pegar la plantilla que hemos sacado de la documentación oficial https://mvnrepository.com/artifact/org.springframework/spring-beans
+lo explico en la segunda línea, porque es obligatorio poner en la primera lo que hay puesto -->
+
+<!-- En vez de declarar los beans en xml, podemos habilitar el escaneo automático con context lin 9 y añadiendo
+ el texto de lin10-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="com.example" />
+<!--para que acepte el contexto:component-scan, hay que añadirle a las clases @component al principio de cada clase -->
+
+</beans>

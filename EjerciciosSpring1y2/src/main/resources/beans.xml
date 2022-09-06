@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Crear el archivo beans.xml con un bean para la clase com.example.Saludo.-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+
+    <context:component-scan base-package="com.example" /> <!-- Habilitar el escaneo de clases en el archivo beans.xml -->
+    <!--para que acepte el contexto:component-scan, hay que añadirle a las clases @component al principio de cada clase -->
+
+    <bean id="saludo" class="com.example.Saludo">
+        <!-- Hay que asignarle un id y, crear una clase dentro del paquete main.java.paquete.clase -->
+        <!-- SCOPE prototype es para que cada vez que se ejecute, cree uno nuevo en lugar de utilizar
+         el mismo-->
+    </bean>
+
+
+
+</beans>

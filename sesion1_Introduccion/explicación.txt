@@ -1,0 +1,4 @@
+En esta primera sesión que es Spring, 
+aspectos básicos del mismo, 
+instalación, 
+puesta en marcha y configuración del IDE.
