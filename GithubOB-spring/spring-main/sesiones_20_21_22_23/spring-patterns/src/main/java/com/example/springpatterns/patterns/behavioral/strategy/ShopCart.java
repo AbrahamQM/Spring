@@ -21,7 +21,10 @@ public class ShopCart {
 
     // pagar utilizando una estrategia de pago
     public void pay(PaymentStrategy paymentMethod){
+        // Usando Programación funcional
     	Double result = products.stream().map(x -> x.getPrice()).reduce(Double::sum).orElse(0d);
+
+        //Usando programación estructurada o Programación orientada a objetos
         double amount = 0;
         for (Product product : products) {
             amount += product.getPrice();
